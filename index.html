@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <span>Theme</span>
+        </button>
+        <a href="" onclick="window.open('ahmedrashid.pdf')" class="resume-btn" open>
+            <i class="fas fa-download"></i>
+            <span>Resume</span>
+        </a>
+    </header>
+
+    <section class="hero">
+        <img src="prof.jpg" alt="Profile" class="profile-img">
+        <h1>Ahmed Rashid</h1>
+        <p>Data Analyst & Front End Developer</p>
+        <div class="social-links">
+            <a href="https://github.com/ahmedrishid" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="mailto: ahmedrashid0110@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ahmed-rashid-5bb6362a4/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/ahmedbn_" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+            Hi My name is Ahmed <br>
+            I'm a passionate data analyst and Web Developer  with a keen eye for turning complex problems 
+            into elegant solutions. With expertise in both data analysis and web development, I create 
+            data-driven applications that make a difference.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Data Analytics</h3>
+                <ul class="skill-list">
+                    <li class="skill-item"><span class="skill-dot"></span>Python</li>
+                    <li class="skill-item"><span class="skill-dot"></span>SQL</li>
+                    <li class="skill-item"><span class="skill-dot"></span>Power BI</li>
+                    <li class="skill-item"><span class="skill-dot"></span>MS Excel</li>
+                    <li class="skill-item"><span class="skill-dot"></span>Tableau</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul class="skill-list">
+                    <li class="skill-item"><span class="skill-dot"></span>HTML</li>
+                    <li class="skill-item"><span class="skill-dot"></span>CSS</li>
+                    <li class="skill-item"><span class="skill-dot"></span>JavaScript</li>
+                    <li class="skill-item"><span class="skill-dot"></span>Python</li>
+                    <li class="skill-item"><span class="skill-dot"></span>Django</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                    <li class="skill-item"><span class="skill-dot"></span>Python</li>
+                    <li class="skill-item"><span class="skill-dot"></span>JavaScript</li>
+                    <li class="skill-item"><span class="skill-dot"></span>SQL</li>
+                    <li class="skill-item"><span class="skill-dot"></span>Django</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Version Control</h3>
+                <ul class="skill-list">
+                    <li class="skill-item"><span class="skill-dot"></span>Git</li>
+                    <li class="skill-item"><span class="skill-dot"></span>Github</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Some Personal Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>A Modern Landing Page</h3>
+                <p>Interactive and fully functional Landing pagebuilt with html,css and JavaScript</p>
+                <div class="project-links">
+                    <a href="https://ahmedrishid.github.io/govpn/" target="_blank" class="project-btn demo-btn">
+                        <i class="fas fa-external-link-alt"></i>
+                        Demo
+                    </a>
+                    <a href="https://github.com/ahmedrishid/govpn.git" target="_blank"  class="project-btn code-btn">
+                        <i class="fas fa-code"></i>
+                        Code
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>A modern dashboard</h3>
+                <p>Built with html and css</p>
+                <div class="project-links">
+                    <a href="https://ahmedrishid.github.io/godash/" target="blank"  class="project-btn demo-btn">
+                        <i class="fas fa-external-link-alt"></i>
+                        Demo
+                    </a>
+                    <a href="https://github.com/ahmedrishid/godash.git" target="_blank" class="project-btn code-btn">
+                        <i class="fas fa-code"></i>
+                        Code
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Jigjiga University Portal sign-up Page</h3>
+                <p>Personal portfolio built with modern web technologies</p>
+                <div class="project-links">
+                    <a href="https://ahmedrishid.github.io/jjulog/"  target="_blank"  class="project-btn demo-btn">
+                        <i class="fas fa-external-link-alt"></i>
+                        Demo
+                    </a>
+                    <a href="https://github.com/ahmedrishid/jjulog.git" target="_blank" class="project-btn code-btn">
+                        <i class="fas fa-code"></i>
+                        Code
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            themeIcon.classList.toggle('fa-moon');
+            themeIcon.classList.toggle('fa-sun');
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll reveal animations
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            const reveals = document.querySelectorAll('section');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
